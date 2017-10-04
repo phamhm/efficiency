@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  {% load custom_tags %}
+
+  <form action="" method="POST" >
+    {% csrf_token %}
+    <table>
+      {{form}}
+    </table>
+    <input name="Submit" type="submit" value="Submit"/>
+  </form>
+  {% show_energy_list energy_model_objects %}
+{% endblock %}

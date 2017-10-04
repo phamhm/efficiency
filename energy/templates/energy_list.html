@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>time</th>
+    <th>level</th>
+  </tr>
+  {% for energy in energy_list%}
+  <tr>
+    <th>{{energy.capture_time}}</th>
+    <th>{{energy.energy_level}}</th>
+  </tr>
+  {% endfor%}
+</table>
