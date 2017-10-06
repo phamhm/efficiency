@@ -1,7 +1,9 @@
-from django.views.generic.edit import CreateView
-from django.core.urlresolvers import reverse_lazy
 from .forms import EnergyCaptureForm
 from .models import EnergyCapture
+from django.core.urlresolvers import reverse_lazy
+from django.views.generic.edit import CreateView
+
+
 # Create your views here.
 
 
