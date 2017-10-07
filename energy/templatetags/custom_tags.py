@@ -18,7 +18,7 @@ def print_context(context):
 @register.inclusion_tag('energy_list.html')
 def show_energy_list(energy_model_objects, item_counts=None):
     # TODO: find more efficient filter for last_N objects
-    energy_list = energy_model_objects.all().order_by('-id')
+    energy_list = energy_model_objects.order_by('-id')
 
     if item_counts:
         return {'energy_list': energy_list[:item_counts]}

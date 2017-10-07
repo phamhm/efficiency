@@ -6,9 +6,16 @@
   <form action="" method="POST" >
     {% csrf_token %}
     <table>
-      {{form}}
+      <tr>
+        <td>
+          {{form}}
+        </td>
+        <td>
+          <input name="Submit" type="submit" value="Submit"/>
+        </td>
+      </tr>
     </table>
-    <input name="Submit" type="submit" value="Submit"/>
+
   </form>
   {% show_energy_list energy_model_objects %}
 {% endblock %}
